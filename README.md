@@ -73,12 +73,20 @@ https://gist.github.com/ongaeshi/a5609737489c46b863aa
 
 あとは通常のRStudioと同様に使えますし,リンクさせたディレクトリが見えているはずです。
 
-### Dockerコンテナの停止
+### Dockerコンテナの停止と再開
 
 Dockerコンテナを停止するには,以下のコマンドを実行してください:
 
 ```
 $ docker stop (コンテナ名)
+```
+
+Ubuntuの場合は`sudo`が必要です。
+
+停止したDockerコンテナを再開するには,以下のコマンドを実行してください:
+
+```
+$ docker start (コンテナ名)
 ```
 
 Ubuntuの場合は`sudo`が必要です。
