@@ -46,7 +46,7 @@ Ubuntuの場合は`sudo`が必要です。
 必要に応じてオプションなどは変更してください。例えば,手元PCのホームディレクトリとコンテナのホームディレクトリをリンクさせ,コンテナ名を"kosaki"にしたいなら,以下のような感じになります:
 
 ```
-$ docker run -p 8787:8787 -v ~:/home/rstudio -d --name kosoaki kazutan/stan-d
+$ docker run -p 8787:8787 -v ~:/home/rstudio -d --name kosaki kazutan/stan-d
 ```
 
 現在起動しているコンテナを確認するため,以下のコマンドを実行してみます:
