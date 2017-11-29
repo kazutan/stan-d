@@ -1,7 +1,7 @@
 # stan-d
 Dockerfile for rstan on RStudio Server. Sorry, this repository is designed for Japanese only.
 
-このDockerfileは,`rocker/hadleyverse`をベースにし,`tokyor/rstudio`のDockerfileの記述をベースにして,以下のパッケージおよびそれらの依存パッケージを組み込んだものです。
+このDockerfileは,`rocker/tidyverse`をベースにし,`tokyor/rstudio`のDockerfileの記述をベースにして,以下のパッケージおよびそれらの依存パッケージを組み込んだものです。
 
 - rstan
 - rstanarm
