@@ -3,9 +3,16 @@ Dockerfile for rstan on RStudio Server. Sorry, this repository is designed for J
 
 このDockerfileは,`rocker/tidyverse`をベースにし,`tokyor/rstudio`のDockerfileの記述をベースにして,以下のパッケージおよびそれらの依存パッケージを組み込んだものです。
 
+- githubinstall
 - rstan
 - rstanarm
 - ggmcmc
+- bayesplot
+- brms
+- tidybayes
+- tidyverse群パッケージ
+- rmarkdown
+- shiny 等
 
 必要に応じて,更新およびパッケージの見直しをしていきます。
 
