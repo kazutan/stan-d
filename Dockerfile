@@ -15,6 +15,7 @@ RUN apt-get update && apt-get install -y \
   fonts-ipaexfont
 
 # Install packages
-RUN Rscript -e "install.packages(c('githubinstall','rstan','ggmcmc','rstanarm','bayesplot','brms','loo'))"
+# rstanarmが2017/12/21からコンパイルでコケる。pythonがらみっぽいので外す
+RUN Rscript -e "install.packages(c('githubinstall','rstan','ggmcmc','bayesplot','brms'))"
 
 CMD ["/init"]
