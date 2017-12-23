@@ -10,7 +10,11 @@ RUN sed -i '$d' /etc/locale.gen \
 RUN /bin/bash -c "source /etc/default/locale"
 RUN ln -sf  /usr/share/zoneinfo/Asia/Tokyo /etc/localtime
 
+# Install Japanese fonts
+RUN apt-get update && apt-get install -y \
+  fonts-ipaexfont
+
 # Install packages
-RUN Rscript -e "install.packages(c('githubinstall','rstan','ggmcmc','rstanarm','bayesplot','brms','tidybayes'))"
+RUN Rscript -e "install.packages(c('githubinstall','rstan','ggmcmc','rstanarm','bayesplot','brms','loo'))"
 
 CMD ["/init"]
